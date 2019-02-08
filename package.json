@@ -1,0 +1,27 @@
+{
+  "name": "intro-a-node",
+  "version": "1.0.0",
+  "description": "Este es mi primer paquete de node",
+  "main": "index.js",
+  "scripts": {
+    "cowsay": "./node_modules/.bin/cowsay",
+    "cowthink": "node_modules/.bin/cowthink"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LayRT/Intro-a-node.git"
+  },
+  "keywords": [
+    "node",
+    "js"
+  ],
+  "author": "Laylet RT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LayRT/Intro-a-node/issues"
+  },
+  "homepage": "https://github.com/LayRT/Intro-a-node#readme",
+  "dependencies": {
+    "cowsay": "^1.4.0"
+  }
+}
