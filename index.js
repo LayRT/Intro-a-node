@@ -12,7 +12,7 @@ const amigos = "pollin y cochimon";
 const villano = "Nutria";
 const broma = "perfumo"
 let opcion = "bañar todos los dias"
-let end = "sus amigos se reian de ella"
+let end = "sus amigos no se reian de ella"
 
 console.log(intro.historia(personaje, lugar, amigos, edad));
 console.log(nudo.historia2(personaje, villano, broma));
