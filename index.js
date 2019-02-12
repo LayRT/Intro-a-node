@@ -1,3 +1,5 @@
+// jshint esversion:6
+
 var cowsay = require("cowsay");
 const intro = require('./Intro');
 const nudo = require('./nudo');
@@ -20,3 +22,4 @@ console.log(cowsay.say({
 	e : "xO",
 	T : "U "
 }));
+
