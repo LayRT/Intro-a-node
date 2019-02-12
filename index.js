@@ -11,7 +11,7 @@ const lugar = "la granja feliz";
 const amigos = "pollin y cochimon";
 const villano = "Nutria";
 const broma = "perfumo"
-let opcion = "bañar todos los dias"
+let opcion = "bañarse todas las semanas"
 let end = "sus amigos se reian de ella"
 
 console.log(intro.historia(personaje, lugar, amigos, edad));
@@ -22,4 +22,3 @@ console.log(cowsay.say({
 	e : "xO",
 	T : "U "
 }));
-
