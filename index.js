@@ -28,6 +28,6 @@ fs.writeFile('/Users/JAVC/Desktop/historia.txt', historiaCompleta, (err) => {
 
 console.log(cowsay.say({
 	text : "Hola amigos ",
-	e : "xO",
+	e : "0 0",
 	T : "U "
 }));
