@@ -1,22 +1,31 @@
 // jshint esversion:6
 
 var cowsay = require("cowsay");
-const intro = require('./Intro');
+const intro = require('./intro');
 const nudo = require('./nudo');
 const final = require('./final');
+const fs = require('fs');
 
-const edad = Math.floor(Math.random() * 100);
+const edad = Math.ceil(Math.random() * 100);
 const personaje = "vaquita feliz";
 const lugar = "la granja feliz";
 const amigos = "pollin y cochimon";
 const villano = "Nutria";
-const broma = "perfumo"
-let opcion = "bañarse todas las semanas"
-let end = "sus amigos se reian de ella"
+const broma = "perfumo";
+let opcion = "bañarse todas las semanas";
+let end = "sus amigos se reian de ella";
 
-console.log(intro.historia(personaje, lugar, amigos, edad));
-console.log(nudo.historia2(personaje, villano, broma));
-console.log(final.historia3(opcion, end));
+const introHistoria = intro.historia(personaje, lugar, amigos, edad);
+const nudoHistoria = nudo.historia(personaje, villano, broma);
+const finalHistoria = final.historia(opcion, end);
+const historiaCompleta = introHistoria + nudoHistoria + finalHistoria;
+
+fs.writeFile('/Users/JAVC/Desktop/historia.txt', historiaCompleta, (err) => {
+    if(err) {
+        console.log(err);
+    }
+});
+
 console.log(cowsay.say({
 	text : "Hola amigos ",
 	e : "xO",

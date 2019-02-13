@@ -1,5 +1,7 @@
+// jshint esversion:6
+
 module.exports ={
-historia3: function (opcion, end) {
-  return `ella se tuvo que  ${opcion} y ${end}.`
+historia: function (opcion, end) {
+  return `ella se tuvo que  ${opcion} y ${end}.`;
  }
-}
+};

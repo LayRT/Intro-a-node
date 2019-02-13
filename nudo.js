@@ -1,6 +1,8 @@
+// jshint esversion:6
+
 module.exports ={
-historia2: function (personaje, villano, broma) {
+historia: function (personaje, villano, broma) {
   return `un día su enemigo ${villano} le tendio una trampa a ${personaje}, él ${broma} a
-  ${personaje} y se puso muy triste`
+  ${personaje} y se puso muy triste`;
  }
-}
+};
