@@ -1,11 +1,17 @@
 // jshint esversion:6
 
+/****************
+ * Modulos
+ ***************/
 var cowsay = require("cowsay");
 const intro = require('./intro');
 const nudo = require('./nudo');
 const final = require('./final');
 const fs = require('fs');
 
+/***************
+ * Variables
+ ***************/
 const edad = Math.ceil(Math.random() * 100);
 const personaje = "vaquita feliz";
 const lugar = "la granja feliz";
